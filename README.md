@@ -66,8 +66,130 @@ Principalmente el proyecto consiste en una refactorización de un proyecto anter
  -->
 
 <!--
-    Antes de comenzar con el maquetado hago un mock para tener una guia
+    Antes de comenzar con el maquetado hago un mock para tener una guia:
+    Imagen -> Inicio del Juego
     <img width="1673" height="1124" alt="image" src="https://github.com/user-attachments/assets/1b098e0d-77b1-4cac-b68c-26d61f2036b4" />
+    --------------------------------------------------------------------------------------------------------------------------------
 
-
+    Imagen -> Panel de edificios
 -->
+
+# 6 Funcionamiento del Juego
+
+# 6.1. Mecánica básica
+<!-- 
+El jugador empieza con un botón Miaulquimia.
+
+Al pulsarlo, tras un tiempo de espera, gana 1 moneda (Miauneda).
+
+El tiempo de espera crece según las monedas acumuladas:
+Tiempo = 0.25 segundos × nº de monedas.
+ -->
+
+# 6.2 Objetivo
+
+<!-- 
+El objetivo es construir el edificio Culto.
+
+Al construirlo, el jugador gana la partida. 🎉 
+-->
+# 6.3. Recursos
+
+<!-- 
+Monedas (Miaunedas) → se obtienen con Miaulquimia.
+
+Amatistas → se obtienen con el botón Recoger y en el Michi Mercado.
+
+Hierbas → se obtienen con el botón Recoger y en el Michi Mercado.
+
+Trabajadores → se obtienen construyendo Casitas (+5 por cada una).
+
+Trigo → se produce automáticamente al construir la Boticaria. 
+-->
+
+# 6.4. Edificios y costes
+
+<!--
+ Almacén 🏠
+
+  Coste: 2 monedas
+
+  Desbloquea el botón Recoger y los demás edificios.
+
+Casita 🏡
+
+  Coste: 6 monedas + 6 amatistas
+
+  Aporta +5 trabajadores.
+
+  Boticaria ⚗️
+
+  Coste: 8 monedas + 9 amatistas + 5 hierbas
+
+  Produce trigo automático cada cierto tiempo.
+
+Michi Mercado 🐾
+
+  Coste: 8 amatistas + 9 hierbas
+
+  Permite comprar amatistas o hierbas con monedas.
+
+Molino 🌾
+
+  Coste: 5 monedas + 8 amatistas
+
+  Requisito previo para el Culto.
+
+Culto ⛪
+
+  Coste: 10 monedas + 7 hierbas + 9 amatistas
+
+  Construirlo = victoria. 
+-->
+
+# 7 Reglas del Juego
+<!--
+🎮 Cómo jugar
+
+1. Generar monedas
+
+  *Pulsa el botón Miaulquimia para crear monedas (Miaunedas).
+
+  *Cuantas más monedas tengas, más tardará en generarse la siguiente.
+
+2. Construir edificios
+
+  *Con suficientes monedas y recursos podrás construir edificios.
+
+  *Cada edificio desbloquea nuevas funciones o recursos.
+
+3. Recolectar recursos
+
+  *Tras construir el Almacén, aparece el botón Recoger.
+
+  *Cada vez que lo uses obtendrás amatistas y hierbas en cantidad aleatoria.
+
+  *Los trabajadores aumentan la cantidad de recursos que obtienes al recoger.
+
+4. Progresión de edificios
+
+  *Almacén → desbloquea el botón Recoger y el resto de edificios.
+
+  *Casitas → te dan trabajadores (+5 cada una).
+
+  *Boticaria → empieza a generar trigo automáticamente.
+
+  *Michi Mercado → te permite comprar amatistas y hierbas con monedas.
+
+  *Molino → requisito para desbloquear el Culto.
+
+  *Culto → último edificio; al construirlo ganas la partida.
+
+5. Objetivo final
+
+  *Tu meta es reunir los recursos suficientes para construir el Culto.
+
+  *Una vez construido → 🎉 ¡Has ganado el juego!
+-->
+
+
