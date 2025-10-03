@@ -14,8 +14,18 @@ Este proyecto consiste en la **refactorización de un juego creado originalmente
 **MIAUGIC KINGDOM: El Reino de los Michips**  
 
 En este reino, los gatos (Michips) dominan a los humanos gracias a sus poderes mágicos.  
-El jugador deberá **gestionar recursos, construir edificios y progresar** hasta alcanzar el **Culto**, el edificio final que representa la victoria.  
+El jugador deberá **gestionar recursos, construir edificios y progresar** hasta alcanzar el **Culto**, el edificio final que representa la victoria.
 
+### 2.1  Mocks de la interfaz
+![Mockup escritorio inicio](./docs/Mocks%20juego%20React/Inicio_vista_pc.png)
+![Mockup escritorio edificios](./docs/Mocks%20juego%20React/Edificios_vista_pc.png) 
+![Mockup movil inicio](./docs/Mocks%20juego%20React/Inicio_vista_movil.png) 
+![Mockup movil edificios](./docs/Mocks%20juego%20React/Edificios_vista_movil.png) 
+    
+
+---
+
+      
 ---
 
 ## 3. ⚙️ Requisitos del sistema
@@ -86,7 +96,7 @@ npm run build
 - **Monedas** → con Miaulquimia.  
 - **Amatistas y Hierbas** → con el botón Recoger o en el Michi Mercado.  
 - **Trabajadores** → con Casitas (+5 cada una).  
-- **Trigo** → producido automáticamente por la Boticaria.  
+- **Trigo** → producido automáticamente por el molino.  
 
 ### 6.4 Edificios y costes
 - **Almacén** → 2 monedas.  
@@ -94,7 +104,7 @@ npm run build
 - **Boticaria** → 8 monedas + 9 amatistas + 5 hierbas.  
 - **Michi Mercado** → 8 amatistas + 9 hierbas.  
 - **Molino** → 5 monedas + 8 amatistas.  
-- **Culto** → 10 monedas + 7 hierbas + 9 amatistas.  
+- **Culto** → 10 monedas + 7 hierbas + 9 amatistas + 5 panes + 10 trabajadores.  
 
 ---
 
@@ -103,9 +113,9 @@ npm run build
 2. Construye el **Almacén** para desbloquear recursos.  
 3. Usa **Recoger** para obtener amatistas y hierbas.  
 4. Construye **Casitas** para obtener trabajadores.  
-5. Construye la **Boticaria** para empezar a generar trigo automáticamente.  
-6. En el **Michi Mercado** podrás comprar amatistas y hierbas con monedas.  
-7. Construye el **Molino** para desbloquear el Culto.  
+5. Construye la **Boticaria** para empezar desbloquear el molino y el mercado.  
+6. En el **Michi Mercado** podrás comprar amatistas y hierbas con monedas y pan con trigo.  
+7. Construye el **Molino** para empezar a generar trigo y poder comprar pan.  
 8. Construye el **Culto** → 🎉 ¡Has ganado el juego!  
 
 ---
