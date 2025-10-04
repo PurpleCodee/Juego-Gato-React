@@ -23,9 +23,7 @@ El jugador deberá **gestionar recursos, construir edificios y progresar** hasta
 ![Mockup movil edificios](./docs/Mocks%20juego%20React/Edificios_vista_movil.png) 
     
 
----
-
-      
+---     
 ---
 
 ## 3. ⚙️ Requisitos del sistema
