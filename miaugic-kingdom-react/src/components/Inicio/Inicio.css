@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/imagenes/imagen-fondo-inicio.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/*Fuente de la web*/
+@font-face {
+  font-family: 'KCObraLetraBold';
+  src: url('/fuentes/KCObraLetraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KCObraLetraRegular';
+  src: url('/fuentes/KCObraLetraRegular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+.fondo-inicio {
+  position: relative;
+  z-index: 1;  /* más alto que body */
+  padding: 50px;
+  background-color: #c8e1f6; /* Fondo translúcido */
+  border-radius: 15px;
+  border: 4px solid rgb(51, 46, 88);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-height: 75vh;
+}
+
+h1 {
+  color: rgb(68, 62, 117);
+  font-family: 'KCObraLetraBold', sans-serif;
+  z-index: 2;
+}
+
+button {
+  font-weight: bold;
+}
+
