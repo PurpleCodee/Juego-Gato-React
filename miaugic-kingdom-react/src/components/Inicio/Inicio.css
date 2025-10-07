@@ -26,22 +26,66 @@ html, body {
 
 .fondo-inicio {
   position: relative;
-  z-index: 1;  /* más alto que body */
-  padding: 50px;
-  background-color: #c8e1f6; /* Fondo translúcido */
+  z-index: 1;
+  background-color: #c8e1f6;
   border-radius: 15px;
   border: 4px solid rgb(51, 46, 88);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  min-height: 75vh;
+  min-height: 75vh;       /* ocupa el 75% de la pantalla*/
+  padding-bottom: 0;
+  /*Esto lo hago para que la imagen se ponga abajo del todo del contenedor*/
+  display: flex;          /* convierte en flexbox*/
+  flex-direction: column; /* organiza hijos en columna */
 }
+
 
 h1 {
   color: rgb(68, 62, 117);
   font-family: 'KCObraLetraBold', sans-serif;
   z-index: 2;
 }
-
-button {
+/*-------------Estilos de los botones y sus hover---------------*/
+.btn-generar-moneda {
+  background-color: rgb(92, 83, 158);
+  color: #f4e5a5;
+  border-color: #f4e5a5;
+  font-family: 'KCObraLetraBold', sans-serif;
   font-weight: bold;
+  border: 3px solid;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
 }
 
+.btn-generar-moneda:hover {
+  background-color: #f4e5a5;
+  color: rgb(51, 46, 88);
+  border-color: rgb(51, 46, 88);
+}
+
+.btn-edificios{
+  background-color: rgb(51, 46, 88);
+  color: #f4e5a5;
+  border-color: #f4e5a5;
+  font-family: 'KCObraLetraBold', sans-serif;
+  font-weight: bold;
+  border: 3px solid;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.btn-edificios:hover {
+background-color: #f4e5a5;
+  color: rgb(51, 46, 88);
+  border-color: rgb(51, 46, 88);
+}
+/**-------------Fin estilos botones y hover---------------*/
+
+.imagen-castillo {
+  border-radius: 9px;
+  max-width: 100%;  /* que nunca se pase del ancho */
+  height: auto;     /* mantiene proporción */
+}
