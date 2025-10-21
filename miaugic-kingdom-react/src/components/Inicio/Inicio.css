@@ -34,7 +34,7 @@ html, body {
   min-height: 75vh;       /* ocupa el 75% de la pantalla*/
   padding-bottom: 0;
   /*Esto lo hago para que la imagen se ponga abajo del todo del contenedor*/
-  display: flex;          /* convierte en flexbox*/
+  display: flex;
   flex-direction: column; /* organiza hijos en columna */
 }
 
@@ -58,7 +58,9 @@ h1 {
   transition: background-color 0.3s ease;
 }
 
-.btn-generar-moneda:hover {
+.btn-generar-moneda:hover,
+.btn-generar-moneda:focus,
+.btn-generar-moneda:active {
   background-color: #f4e5a5;
   color: rgb(51, 46, 88);
   border-color: rgb(51, 46, 88);
@@ -77,7 +79,10 @@ h1 {
   transition: background-color 0.3s ease;
 }
 
-.btn-edificios:hover {
+/*Incluyo el focus y el active para que el efecto se incluya tambien en vista movil*/
+.btn-edificios:hover,
+.btn-edificios:focus,
+.btn-edificios:active {
 background-color: #f4e5a5;
   color: rgb(51, 46, 88);
   border-color: rgb(51, 46, 88);
@@ -88,4 +93,35 @@ background-color: #f4e5a5;
   border-radius: 9px;
   max-width: 100%;  /* que nunca se pase del ancho */
   height: auto;     /* mantiene proporción */
+}
+
+/*Estilo para el texto de monedas obtenidas*/
+.monedasObtenidas {
+  font-family: 'KCObraLetraRegular', sans-serif;
+  font-size: 1.5rem;
+  color: rgb(68, 62, 117);
+}
+
+/*---------Estilo animacion de la moneda-----------*/
+.cat-coin {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mostrarMoneda {
+  opacity: 1;
+  animation: moverMoneda 2s ease-out forwards;
+}
+
+
+@keyframes moverMoneda {
+  0% { transform: translate(-50%, 0); opacity: 1; }
+  80% { transform: translate(-50%, -10vh); opacity: 1; }
+  100% { transform: translate(-50%, -20vh); opacity: 0; }
 }

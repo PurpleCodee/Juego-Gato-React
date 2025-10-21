@@ -85,7 +85,7 @@ npm run build
 
 ### 6.1 Mecánica básica
 - Empiezas con el botón **Miaulquimia**, que genera monedas (Miaunedas).  
-- Cuantas más monedas tengas, más tarda en generarse la siguiente.  
+- Cuantas más monedas tengas, más tarda en generarse la siguiente 0.25 seg * las monedas que va acumulando .  
 
 ### 6.2 Objetivo
 - Construir el edificio **Culto** → 🎉 ¡Victoria!  
