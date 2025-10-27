@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react"
+import { Link } from "react-router-dom";
 import "./Inicio.css"
 
 function Inicio() {
@@ -49,10 +50,10 @@ function Inicio() {
       monedas: nuevaMoneda,
     });
 
-       setTimeout(() => {
-        segundosRef.current += 250;
-        console.log("Delay acumulado:", segundosRef.current);
-      }, 250 * nuevaMoneda);
+    setTimeout(() => {
+      segundosRef.current += 250;
+      console.log("Delay acumulado:", segundosRef.current);
+    }, 250 * nuevaMoneda);
 
     // añadir una nueva moneda animada
     const id = Date.now();
@@ -70,7 +71,7 @@ function Inicio() {
     }, 2000);
   };
 
-    console.log(juego.monedas);
+  console.log(juego.monedas);
 
   return (
     <div className="container text-center fondo-inicio px-0 position-relative">
@@ -85,9 +86,9 @@ function Inicio() {
             </button>
 
             {juego.monedas >= 2 && (
-              <button className="btn btn-lg btn-edificios mt-3 w-50">
+              <Link to="/edificios" className="btn btn-lg btn-edificios mt-3 w-50">
                 Edificios
-              </button>
+              </Link>
             )}
 
             <div className="mt-auto mb-3">
