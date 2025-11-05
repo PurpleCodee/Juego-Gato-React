@@ -38,7 +38,7 @@ function Inicio() {
 
     // reproducir sonido
     if (audioRef.current) {
-      audioRef.current.volume = 0.1; // volumen al 30%
+      audioRef.current.volume = 0.1; // volumen al 10%
       audioRef.current.currentTime = 0;
       audioRef.current.play();
     }

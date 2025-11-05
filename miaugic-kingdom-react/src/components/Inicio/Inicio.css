@@ -1,4 +1,4 @@
-html, body {
+html, body{
   margin: 0;
   padding: 0;
   width: 100%;
@@ -35,7 +35,7 @@ html, body {
   padding-bottom: 0;
   /*Esto lo hago para que la imagen se ponga abajo del todo del contenedor*/
   display: flex;
-  flex-direction: column; /* organiza hijos en columna */
+  flex-direction: column;
 }
 
 

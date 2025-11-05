@@ -102,7 +102,7 @@ npm run build
 - **Boticaria** → 8 monedas + 9 amatistas + 5 hierbas.  
 - **Michi Mercado** → 8 amatistas + 9 hierbas.  
 - **Molino** → 5 monedas + 8 amatistas.  
-- **Culto** → 10 monedas + 7 hierbas + 9 amatistas + 5 panes + 10 trabajadores.  
+- **Culto** → 10 monedas + 7 hierbas + 9 amatistas + 5 panes + 10 trabajadores + 1 tentaculo.  
 
 ---
 
@@ -136,6 +136,10 @@ src/
 ```
 
 ---
-
-## 9. 📜 Licencia
+## 9. 📦 Paquetes instalados
+Para crear un sistema de rutas de Inicio a Edificios:  
+```bash
+npm install react-router-dom
+```
+## 10. 📜 Licencia
 Este proyecto se distribuye bajo la licencia MIT.  

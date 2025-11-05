@@ -1,0 +1,163 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/imagenes/imagen-fondo-edificios.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/*Fuente de la web*/
+@font-face {
+  font-family: 'KCObraLetraBold';
+  src: url('/fuentes/KCObraLetraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KCObraLetraRegular';
+  src: url('/fuentes/KCObraLetraRegular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+
+.fondo-edificios-componente {
+  background-color: #401e37;
+  border-radius: 15px;
+  border: 4px solid #f4e5a5;
+  min-height: 90vh;
+  min-width: 75vw;
+  display: flex;
+  flex-direction: column;
+   margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/imagenes/imagen-fondo-atardecer.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;             /* se mantiene la  opacidad completa */
+}
+
+.row.flex-grow-1 {
+  display: flex;
+  align-items: center;       
+  justify-content: center;  
+}
+
+
+
+h5, li{
+    color: #E6D3A3;
+    font-family: 'KCObraLetraRegular', sans-serif;
+    z-index: 1;
+}
+
+/*------------Titulo de las monedas acumuladas-----------*/
+h4{
+    color: #251B38;
+    font-family: 'KCObraLetraBold', sans-serif;
+}
+/*-------------Estilos de los botones y sus hover---------------*/
+.btn-recoger {
+    background-color: #E5D0A7;
+    color: #251B38;
+    font-family: 'KCObraLetraBold', sans-serif;
+    font-weight: bold;
+    border: 3px solid #695fb1;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+.btn-recoger:hover {
+    background-color: rgb(92, 83, 158);
+    color: #f4e5a5;
+    text-decoration: none;
+}
+
+.btn-inicio {
+    background-color: rgb(92, 83, 158);
+    color: #f4e5a5;
+    border-color: #f4e5a5;
+    font-family: 'KCObraLetraBold', sans-serif;
+    font-weight: bold;
+    border: 3px solid;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+.btn-inicio:hover {
+    background-color: #E5D0A7;
+    color: #251B38;
+    text-decoration: none;
+}
+
+/* Contenedor para recursos y mercado */
+.contenedor-recursos-mercado {
+    gap: 20px;
+    background-color: #251B38cc; 
+    border: 3px solid #695fb1;
+    border-radius: 15px;
+    color: #E6D3A3;
+    z-index: 0;       
+}
+.recursos-mercado{
+   color: #E6D3A3;
+   font-family: 'KCObraLetraRegular', sans-serif;
+   gap: 10px;
+}
+
+.img-fondo-edificios {
+    background-color: #251b38cc; /*este color tiene transparecia cc que es un 80%*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    border: 3px solid #695fb1;
+    padding: 20px;
+    opacity: 1;              /* se mantiene la  opacidad completa */
+    position: relative;       /* necesario si luego se usa overlays */
+}
+
+/* Cada tarjeta de edificio encima del fondo */
+.contenedor-edificio {
+    color: #E6D3A3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    font-family: 'KCObraLetraBold', sans-serif;
+}
+.img-edificios{
+    border-radius: 50%;
+}
+
+
+.btn-construir-edificio {
+    background-color: #251B38;
+    color: #f4e5a5;
+    border: 3px solid #f4e5a5;
+    font-family: 'KCObraLetraBold', sans-serif;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn-construir-edificio:hover {
+    background-color: rgb(92, 83, 158);
+    color: #f4e5a5;
+    text-decoration: none;
+}
+
+.footer-monedas{
+    color: #f4e5a5;
+    font-family: 'KCObraLetraBold', sans-serif;
+}
+
