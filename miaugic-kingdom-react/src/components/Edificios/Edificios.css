@@ -172,9 +172,22 @@ h4 {
     font-family: 'KCObraLetraBold', sans-serif;
 }
 
+
 .img-edificios {
-    border-radius: 50%;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
 }
+
+.img-edificio-bloqueado {
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.img-edificio-activo {
+  border-radius: 50%;
+  opacity: 1;
+}
+
 
 
 .btn-construir-edificio {

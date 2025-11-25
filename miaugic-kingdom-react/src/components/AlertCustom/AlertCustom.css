@@ -1,0 +1,79 @@
+/* Fondo oscuro difuminado */
+.alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Caja medieval */
+.alert-box {
+  background-image: url('/imagenes/imagen-fondo-atardecer.png');
+  background-size: cover;
+  background-position: center;
+  border: 4px solid #f4e5a5;
+  border-radius: 20px;
+  padding: 25px;
+  width: 85%;
+  max-width: 400px;
+  text-align: center;
+  color: #170533;
+  font-family: 'KCObraLetraRegular', serif;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+/* Animación pop-up */
+.pop-animation {
+  animation: popUp 0.4s ease-out;
+}
+
+@keyframes popUp {
+  0% { transform: scale(0.4); opacity: 0; }
+  80% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+/* Imagen */
+.alert-img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+/* Título */
+.alert-title {
+  font-family: 'KCObraLetraBold', serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Mensaje */
+.alert-message {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* Botón */
+.alert-btn {
+  background-color: #695fb1;
+  color: #f4e5a5;
+  font-family: 'KCObraLetraBold', serif;
+  padding: 10px 20px;
+  border: 3px solid #f4e5a5;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.alert-btn:hover {
+  background-color: #4d4685;
+}

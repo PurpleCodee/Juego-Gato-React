@@ -20,16 +20,17 @@ function Inicio() {
     };
   });
 
+  // Guardar el estado del juego en el localStorage cada vez que cambie con el hook useEffect
+  useEffect(() => {
+    sessionStorage.setItem("estadoJuego", JSON.stringify(juego));
+  }, [juego]);
 
   // Lista de monedas que se están animando
   const [monedasAnimadas, setMonedasAnimadas] = useState([]);
   const audioRef = useRef(null);
   const segundosRef = useRef(0);
 
-  // Guardar el estado del juego en el localStorage cada vez que cambie con el hook useEffect
-  useEffect(() => {
-    localStorage.setItem("saved", JSON.stringify(juego));
-  }, [juego]);
+
 
   // Función para generar una moneda y reproducir el sonido
   const generarMoneda = () => {
@@ -77,7 +78,7 @@ function Inicio() {
     <div className="container text-center fondo-inicio px-0 position-relative">
       <div className="row align-items-center">
         <div className="col px-0">
-          <img src="/imagenes/gato-inicio.png" alt="imagen de inicio" width="100" height="100" />
+          <img src="/imagenes/gato-inicio.png" alt="imagen de inicio" width="150" height="150" />
           <h1 className="display-4">Miaugic Kingdom</h1>
 
           <div className="d-flex flex-column align-items-center mt-5 w-100">
