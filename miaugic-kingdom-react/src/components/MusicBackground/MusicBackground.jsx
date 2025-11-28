@@ -37,7 +37,7 @@ export default function MusicBackground() {
   return (
     <audio
       ref={audioRef}
-      src="/sonidos/Golden Brown V2.mp3"
+      src="/sonidos/Golden_Brown_V2.mp3"
       preload="auto"
       style={{ display: "none" }}
     />
