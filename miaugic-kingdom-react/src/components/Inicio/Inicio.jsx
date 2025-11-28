@@ -75,6 +75,7 @@ function Inicio() {
   console.log(juego.monedas);
 
   return (
+    <>
     <div className="container text-center fondo-inicio px-0 position-relative">
       <div className="row align-items-center">
         <div className="col px-0">
@@ -122,6 +123,8 @@ function Inicio() {
         </div>
       </div>
     </div>
+    </>
+    
   )
 }
 

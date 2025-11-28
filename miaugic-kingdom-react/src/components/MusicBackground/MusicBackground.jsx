@@ -19,11 +19,14 @@ export default function MusicBackground() {
     // hasta que el usuario interactua con la pagina (click, tecla, etc)
 
     const activarPorClick = () => {
-      audio.play();
+      audio.play().catch(() => {});
       window.removeEventListener("click", activarPorClick);
     };
 
+    // Intento de reproduccion automatica (en produccion suele fallar)
     audio.play().catch(() => {});
+
+    // Desbloqueo obligatorio por politica del navegador
     window.addEventListener("click", activarPorClick);
 
     return () => {
@@ -34,8 +37,10 @@ export default function MusicBackground() {
   return (
     <audio
       ref={audioRef}
-      src="/sonidos/Golden Brown V2.mp3" // Ruta al archivo de audio
+      src="/sonidos/Golden Brown V2.mp3"
+      preload="auto"
       style={{ display: "none" }}
     />
   );
 }
+

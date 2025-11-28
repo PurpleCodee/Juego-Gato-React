@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./Edificios.css";
 import AlertCustom from "../AlertCustom/AlertCustom.jsx";
+import MusicBackground from "../MusicBackground/MusicBackground.jsx";
 import { Link, useNavigate } from "react-router-dom";
 
 // Estado inicial del juego
