@@ -76,8 +76,7 @@ npm run build
 ## 5. 🛠️ Tecnologías utilizadas
 - **React** → librería para construir la UI.  
 - **Vite** → bundler rápido y ligero para desarrollo.  
-- **Bootstrap** → maquetación responsiva.  
-- **Material UI (MUI)** → algunos componentes listos para usar.  
+- **Bootstrap** → maquetación responsiva.    
 
 ---
 
@@ -94,21 +93,22 @@ npm run build
 - **Monedas** → con Miaulquimia.  
 - **Amatistas y Hierbas** → con el botón Recoger o en el Michi Mercado.  
 - **Trabajadores** → con Casitas (+5 cada una).  
-- **Trigo** → producido automáticamente por el molino.  
+- **Trigo** → producido automáticamente por el molino cada 20 s.
+- **Pan** → cada 10 de trigo se compra un pan.
 
 ### 6.4 Edificios y costes
-- **Almacén** → 2 monedas.  
-- **Casita** → 6 monedas + 6 amatistas.  
-- **Boticaria** → 8 monedas + 9 amatistas + 5 hierbas.  
-- **Michi Mercado** → 8 amatistas + 9 hierbas.  
-- **Molino** → 5 monedas + 8 amatistas.  
-- **Culto** → 10 monedas + 7 hierbas + 9 amatistas + 5 panes + 10 trabajadores + 1 tentaculo.  
+- **Almacén** → 2 monedas, el boton esta disponible desde el momento que se entra a edificios.  
+- **Casita** → 6 monedas + 6 amatistas una vez que se compra el almacen se activa el boton de recoger y ya se puede comprar la casita.  
+- **Boticaria** → 8 monedas + 9 amatistas + 5 hierbas, cuando se tengan los recursos necesarios se desbloquea el boton de comprar.  
+- **Michi Mercado** → 8 amatistas + 9 hierbas, activa el panel de michi mercado para poder comprar amatistas, hierba + 1 cada una y pan cuando se consigan 10 de trigo.  
+- **Molino** → 5 monedas + 8 amatistas, permite generar trigo 10 unidades cada 10 segundos lo que permite comprar pan en el michi mercado
+- **Culto** → 10 monedas + 7 hierbas + 9 amatistas + 5 panes + 10 trabajadores + 1 tentaculo, se gana el juego y se borran los datos.
 
 ---
 
 ## 7. 📜 Reglas del Juego
 1. Pulsa **Miaulquimia** para ganar monedas.  
-2. Construye el **Almacén** para desbloquear recursos.  
+2. Construye el **Almacén** para desbloquear el boton de recursos.  
 3. Usa **Recoger** para obtener amatistas y hierbas.  
 4. Construye **Casitas** para obtener trabajadores.  
 5. Construye la **Boticaria** para empezar desbloquear el molino y el mercado.  
@@ -120,16 +120,24 @@ npm run build
 
 ## 8. 📂 Estructura del proyecto
 ```
+public/
+ |__ fuentes
+ |__ imagenes
+ |__ sonidos
 src/
  ├── components/
+ |    |__AlertCustom/
+ |    |   |__ AlertCustom.jsx
+ |    |   |__ AlertCustom.css
+ |    |
+ |    |
  │    ├── Inicio/
  │    │    ├── Inicio.jsx
  │    │    ├── Inicio.css
- │    │    └── assets/
+ │    │    
  │    └── Edificios/
  │         ├── Edificios.jsx
  │         ├── Edificios.css
- │         └── assets/
  ├── App.jsx
  ├── main.jsx
  └── index.css

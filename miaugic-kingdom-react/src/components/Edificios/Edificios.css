@@ -122,15 +122,37 @@ h4 {
     gap: 10px;
 }
 
-/*Efecto scale de los botones de comprar recursos de mercado*/
+button.efecto-btn {
+  background: transparent !important;
+  border: none !important;
+  padding: 0;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/*Eliminar foco azul en los estados */
+button.efecto-btn:focus,
+button.efecto-btn:active,
+button.efecto-btn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .efecto-btn {
   transition: transform 0.2s ease-in-out;
 }
 
 .efecto-btn:hover {
   transform: scale(1.09);
-  
 }
+
+button.efecto-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
 
 .img-mercado {
   transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;

@@ -409,7 +409,7 @@ function Edificios() {
                   {juego.trigo}
                   {juego.molino && (
                     <span className="ms-2">
-                      (Cosechando... {timerTrigo}s)
+                      ({timerTrigo}..s)
                     </span>
                   )}
                 </li>
@@ -503,7 +503,8 @@ function Edificios() {
 
                 {/* Comprar hierba */}
                 <button
-                  className="mb-2 btn efecto-btn"
+                  className=" mb-4 efecto-btn"
+                  type="button"
                   disabled={!juego.mercado || juego.monedas < 1}
                   onClick={comprarHierba}
                 >
@@ -518,7 +519,8 @@ function Edificios() {
 
                 {/* Comprar amatista */}
                 <button
-                  className=" mb-2 btn efecto-btn"
+                  className=" mb-4 efecto-btn"
+                  type="button"
                   disabled={!juego.mercado || juego.monedas < 1}
                   onClick={comprarAmatista}
                 >
@@ -533,7 +535,8 @@ function Edificios() {
 
                 {/* Comprar pan */}
                 <button
-                  className="btn efecto-btn"
+                  className=" efecto-btn"
+                  type="button"
                   disabled={!juego.molino || juego.trigo < 10}
                   onClick={comprarPan}
                 >
